@@ -1,0 +1,31 @@
+/* No caso do span (que é um inline element) não existe nenhum "campo de forças" a forçar o resto do texto
+a comportar-se de forma diferente */
+span {
+  background-color: palevioletred;
+  border: 1px solid black;
+  width: 500px;
+  padding: 100px;
+  margin: 50px;
+}
+
+/* A razão pela qual isto é respeitado, é porque um h1 é um block element. 
+Então isto é respeitado pelo browser. */
+
+h1 {
+  background-color: paleturquoise;
+  border: 1px solid black;
+  width: 300px;
+  padding: 50px;
+  margin: 100px;
+}
+
+/* Já aqui. Padding, mmargin e width e height serão respeitados! :D */
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 3px solid black;
+  display: inline-block;
+  margin: 50px;
+}

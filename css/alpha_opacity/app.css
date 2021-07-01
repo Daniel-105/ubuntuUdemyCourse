@@ -1,0 +1,11 @@
+section {
+  background-color: #d00000;
+  width: 200px;
+  height: 200px;
+}
+
+section #alpha {
+  background-color: rgba(250, 163, 7, 1);
+  width: 50%;
+  height: 50%;
+}

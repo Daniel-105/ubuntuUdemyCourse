@@ -1,0 +1,17 @@
+section {
+  width: 80%;
+  height: 800px;
+  background-image: url("https://images.unsplash.com/photo-1604580825209-43c3e2f92652?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1037&q=80");
+  /* Isto colorca a imagem o maior que a imagem pode. Contudo, se a imagem for demasiado pequena para o container
+a imagem irá repetir. Para resolver este problema só temos de adicionar a property "Background-repeat" e
+po-lo para "no-repeat" */
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  background-size: cover;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}

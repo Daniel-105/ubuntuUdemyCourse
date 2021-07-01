@@ -1,0 +1,56 @@
+#parent {
+  background-color: saddlebrown;
+  width: 500px;
+  height: 500px;
+}
+
+#child {
+  background-color: salmon;
+  width: 50%;
+  height: 50%;
+  margin: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+}
+
+section {
+  font-size: 20px;
+}
+
+h2 {
+  /* Um em herda o seu tamanho do sou parent */
+  font-size: 2em;
+  /* Contudo, agora com margin and padding as coisas mudam porque agora é
+referente ao tamanho da fonte do element em si mesmo */
+  margin-left: 1em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Se usarmos "em" as coisas ficarão sempre à escala */
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #2a9d8f;
+  color: white;
+}
+
+/* Para que a nossa escala não vá mudando consoante os seus parant
+Usamos REM. Isto significa que estamos a usar a medida do Root! que no
+nosso caso é o html */
+
+ul {
+  font-size: 1.3rem;
+}

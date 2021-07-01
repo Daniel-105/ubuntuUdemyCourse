@@ -1,0 +1,48 @@
+body {
+  height: 10000px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d405b;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: #81b29a;
+}
+
+/* Posição estática não reconhece top, bottom, left and right */
+#static #middle {
+  position: static;
+}
+
+/* Relative reconhece essas properties mas é relativo ao seu parente */
+#relative #middle {
+  position: relative;
+  top: 50px;
+}
+
+#absolute {
+  position: relative;
+}
+
+/* Position absolute, a div será retirada do documento e será visto do container inicial
+(Body).
+Caso queiramos que ela seja retirada do documento mas fique relativa ao seu ascendente
+Prcisamos que colocar os ascendente como Position:relative */
+#absolute #middle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Se quisermos que a posição da coisa fique sempre em cima da nossa página usaremos o fixed
+Isto é util para fazer uma nav */
+#fixed {
+  position: fixed;
+  top: 1px;
+}
