@@ -1,18 +1,24 @@
-let list = [];
+const list = [];
 
 let wish = prompt('What would you like to do?');
 
-let i = 0
-while (wish !== 'quit'){
+
+while (wish !== 'quit' && wish !== 'q'){
+    if (wish === 'list') {
+        console.log('**************************');
+        for (i = 0; i < list.length; i++){
+            console.log(`${i + 1}: ${list[i]}`)
+        }
+        console.log('**************************')
+    } else if (wish === 'new'){
+        let newItem = prompt('Enter new todo');
+        list.push(newItem);
+        
+        console.log(`${newItem} added to the list`)
     
-i++
-    if (wish === 'new'){
-        let newItem = list.push(prompt('Enter new todo'))
-    } else if (wish === 'list') {
-        console.log(`${list[i]}`)
-    }
+    } 
     wish = prompt('What would you like to do?');
-    
+   
 } 
 
 
