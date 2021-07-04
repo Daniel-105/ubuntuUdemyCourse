@@ -9,16 +9,18 @@ while (wish !== 'quit' && wish !== 'q'){
             console.log(`${i}: ${list[i]}`)
         }
         console.log('**************************')
+
     } else if (wish === 'new'){
-        let newItem = prompt('Enter new todo');
+        const newItem = prompt('Enter new todo');
         list.push(newItem);
-        
-        console.log(`${newItem} added to the list`)
+        console.log(`${newItem} added to the list!`)
+
     } else if (wish === 'delete'){
-        let itemToDel = prompt('enter the number you want to delete')
+        let itemToDel = parseInt(prompt('enter the number you want to delete'))
         let delItem = list.splice(itemToDel, 1);
         console.log(`You have deleted ${delItem}`)
     }
+
     wish = prompt('What would you like to do?');
 } 
 console.log('YOU HAVE QUIT THE APP')
