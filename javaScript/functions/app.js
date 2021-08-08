@@ -57,16 +57,16 @@
 // }
 // lastElement(4)
 
-// attempt 3
+// attempt 3 (This is the one)
 
-function lastElement(value) {
-  if (value.length === 0) {
-    return null;
-  } else {
-    let lastNum = value[value.length - 1];
-    return lastNum;
-  }
-}
+// function lastElement(value) {
+//   if (value.length === 0) {
+//     return null;
+//   } else {
+//     let lastNum = value[value.length - 1];
+//     return lastNum;
+//   }
+// }
 
 // function capitalize(word) {
 //   let capWord = word[0].toUpperCase() + word.slice(1)
@@ -75,10 +75,30 @@ function lastElement(value) {
 
 // capitalize(3)
 
-// let sum = 0;
-// function sumArray([num]) {
-//   for (var i = 0; i < arguments.length; i++) {
-//     sum += parseInt(arguments[i]);
+// let total = 0;
+// function sumArray(num) {
+//   for (var i = 0; i < num.length; i++) {
+//     total += parseInt(num[i]);
 //   }
-//   return sum;
+//   return total;
 // }
+
+function returnDay(num) {
+  if (num < 1 || num > 7) {
+    return null;
+  } else if (num === 1) {
+    return "Monday";
+  } else if (num === 2) {
+    return "Tuesday";
+  } else if (num === 3) {
+    return "Wednesday";
+  } else if (num === 4) {
+    return "Thursday";
+  } else if (num === 5) {
+    return "Friday";
+  } else if (num === 6) {
+    return "Saturday";
+  } else if (num === 7) {
+    return "Sunday";
+  }
+}
