@@ -18,9 +18,9 @@
 //     let result = '';
 //     for(let i = 0; i < times; i++) {
 //      result += message;
-       
+
 //     }
-//     console.log(result) 
+//     console.log(result)
 // }
 // repeat("hello", 4)
 
@@ -32,7 +32,6 @@
 // }
 // }
 // isSnakeEyes(6,6)
-
 
 // Attempt 1
 // function lastElement([x,y,z]) {
@@ -50,7 +49,36 @@
 
 // Attemp 2
 
+// let result = [];
+
+// function lastElement(value) {
+//   result.push(value);
+//   return result[result.length-1]
+// }
+// lastElement(4)
+
+// attempt 3
+
 function lastElement(value) {
-    let result = [];
-    
+  if (value.length === 0) {
+    return null;
+  } else {
+    let lastNum = value[value.length - 1];
+    return lastNum;
+  }
 }
+
+// function capitalize(word) {
+//   let capWord = word[0].toUpperCase() + word.slice(1)
+//   return capWord
+// }
+
+// capitalize(3)
+
+// let sum = 0;
+// function sumArray([num]) {
+//   for (var i = 0; i < arguments.length; i++) {
+//     sum += parseInt(arguments[i]);
+//   }
+//   return sum;
+// }
