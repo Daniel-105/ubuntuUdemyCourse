@@ -83,22 +83,81 @@
 //   return total;
 // }
 
-function returnDay(num) {
-  if (num < 1 || num > 7) {
-    return null;
-  } else if (num === 1) {
-    return "Monday";
-  } else if (num === 2) {
-    return "Tuesday";
-  } else if (num === 3) {
-    return "Wednesday";
-  } else if (num === 4) {
-    return "Thursday";
-  } else if (num === 5) {
-    return "Friday";
-  } else if (num === 6) {
-    return "Saturday";
-  } else if (num === 7) {
-    return "Sunday";
-  }
+// function returnDay(num) {
+//   if (num < 1 || num > 7) {
+//     return null;
+//   } else if (num === 1) {
+//     return "Monday";
+//   } else if (num === 2) {
+//     return "Tuesday";
+//   } else if (num === 3) {
+//     return "Wednesday";
+//   } else if (num === 4) {
+//     return "Thursday";
+//   } else if (num === 5) {
+//     return "Friday";
+//   } else if (num === 6) {
+//     return "Saturday";
+//   } else if (num === 7) {
+//     return "Sunday";
+//   }
+// }
+
+// SCOPE
+
+// In this exemple, the word that will be printed will be "cat".
+// A function works like a bubble. The stuff inside the function
+// only works if the function is called.
+
+// let animal = "dog";
+
+// function myPet() {
+//   let animal = "cat"
+//   console.log(animal)
+// }
+
+// myPet()
+
+// // This way we'll see "dog"
+// let animal = "dog"; //
+
+// function myPet() {
+//   let animal = "cat"
+//   console.log(animal)
+// }
+
+// console.log(animal)
+
+// A const can be reassigned because a function works like a bubble
+
+// const animal = "dog";
+
+// function myPet() {
+//   const animal = "cat";
+//   console.log(animal);
+// }
+
+// Function in another functions
+
+// let func = function () {
+//   return "a tua mãe é que é!!";
+// };
+
+// function message(msg) {
+//   console.log(`esta é a tua mensagem ${func()}`);
+// }
+
+// a program to check if a number is between 1 and 10
+
+// const isBetween = function (num) {
+//   return num >= 1 && num <= 10;
+// };
+
+// With this I can store in a variable the min and max I want and then call the variable
+// with a number to check if the  nnumber is between nim and max
+
+function makeBetweenFunc(min, max) {
+  return function (num) {
+    return num >= min && num <= max;
+  };
 }
