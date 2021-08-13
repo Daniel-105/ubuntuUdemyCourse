@@ -156,8 +156,66 @@
 // With this I can store in a variable the min and max I want and then call the variable
 // with a number to check if the  nnumber is between nim and max
 
-function makeBetweenFunc(min, max) {
-  return function (num) {
-    return num >= min && num <= max;
-  };
+// function makeBetweenFunc(min, max) {
+//   return function (num) {
+//     return num >= min && num <= max;
+//   };
+// }
+
+// const math = {
+//   square(num) {
+//     return num ** 2;
+//   },
+//   cube(num) {
+//     return num ** 3;
+//   },
+// };
+
+// codewars practice
+
+function sentenceCased() {
+  let firstWord = arguments.slice(0, 3),
+    secondWord = arguments.slice(4, 7),
+    thirdWord = arguments.slice(8, 15),
+    forthWord = arguments.slice(16, 18),
+    fifthWord = arguments.slice(19, 23),
+    sixthWord = arguments.slice(24, 26),
+    seventhWord = arguments.slice(27, 30),
+    eighthWord = arguments.slice(31, 35),
+    ninethWord = arguments.slice(36, 42),
+    tenthWord = arguments.slice(43, 47);
+
+  let firstWordCap = firstWord[0].toUpperCase() + firstWord.slice(1),
+    secondWordCap = secondWord[0].toUpperCase() + secondWord.slice(1),
+    thirdWordCap = thirdWord[0].toUpperCase() + thirdWord.slice(1),
+    forthWordCap = forthWord[0].toUpperCase() + forthWord.slice(1),
+    fifthWordCap = fifthWord[0].toUpperCase() + fifthWord.slice(1),
+    sixthWordCap = sixthWord[0].toUpperCase() + sixthWord.slice(1),
+    seventhWordCap = seventhWord[0].toUpperCase() + seventhWord.slice(1),
+    eighthWordCap = eighthWord[0].toUpperCase() + eighthWord.slice(1),
+    ninethWordCap = ninethWord[0].toUpperCase() + ninethWord.slice(1),
+    tenthWordCap = tenthWord[0].toUpperCase() + tenthWord.slice(1);
+
+  const fullSent =
+    firstWordCap +
+    " " +
+    secondWordCap +
+    " " +
+    thirdWordCap +
+    " " +
+    forthWordCap +
+    " " +
+    fifthWordCap +
+    " " +
+    sixthWordCap +
+    " " +
+    seventhWordCap +
+    " " +
+    eighthWordCap +
+    " " +
+    ninethWordCap +
+    " " +
+    tenthWordCap;
+
+  return fullSent;
 }
