@@ -22,3 +22,5 @@
 
 const greet = ["Hello"];
 const leters = [...greet[0]];
+
+console.log("hello Robins");
