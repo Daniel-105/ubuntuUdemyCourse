@@ -14,9 +14,9 @@
 //   link.style.color = "red";
 // }
 
-const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+// const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
-const letters = document.querySelectorAll("span");
+// const letters = document.querySelectorAll("span");
 
 // letters[0].style.color = colors[0];
 // letters[1].style.color = colors[1];
@@ -26,13 +26,13 @@ const letters = document.querySelectorAll("span");
 // letters[5].style.color = colors[5];
 // letters[6].style.color = colors[6];
 
-let lettersArray = Array.prototype.slice.call(letters);
+// let lettersArray = Array.prototype.slice.call(letters);
 
-for (let letter of lettersArray) {
-  for (i = 0; i < lettersArray.length; i++) {
-    letter.style.color = "colors[i]";
-  }
-}
+// for (let letter of lettersArray) {
+//   for (i = 0; i < lettersArray.length; i++) {
+//     letter.style.color = "colors[i]";
+//   }
+// }
 // for (let i = 0; i < letters.length; i++) {
 //   for (let i = 0; i < colors.length; i++) {
 //     letters.style.color = "colors[i]";
