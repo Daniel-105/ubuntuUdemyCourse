@@ -40,3 +40,16 @@
 // }
 
 // window.getComputedStyle("span") = 'red';
+
+// for (i = 0; i < 100; i++) {
+//   const buttons = document.createElement("button");
+//   buttons.textContent = "Hey!";
+//   document.body.append(buttons);
+// }
+
+const container = document.querySelector("#container");
+for (i = 0; i < 100; i++) {
+  const buttons = document.createElement("button");
+  buttons.textContent = "Hey!";
+  document.appendChild(div, buttons);
+}
