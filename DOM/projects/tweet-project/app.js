@@ -20,13 +20,13 @@
 // }
 
 const form = document.querySelector("form");
+const list = document.querySelector("#list");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const productInput = form.elements.product;
   const qtyInput = form.elements.qty;
-  const list = document.querySelector("#list");
 
   appendItem(qtyInput.value, productInput.value);
 
@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
 
 function appendItem(qty, product) {
   const listItem = document.createElement("li");
-  listItem.append(qty);
-  listItem.append(` ${product}`);
-  list.append(listItem);
+  //.appendChild(`qty product`);
+  listItem.innerText = `${qty} ${product}`;
+  list.appendChild(listItem);
 }
